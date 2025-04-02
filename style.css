@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Tangerine:wght@400;700&display=swap');
-
-body {
+body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Tangerine", serif;
-    font-family: "Playfair Display", serif;
-    background-color: #e2e0eb;
-    color: #051149;
-    /*color: #375726;*/
+    font-family: "Domine", serif;
+    background-color: #f7f7f7;
+    color: #5572B2;
+    /*color: #82a1d1;
+    #344c92
+    #5572B2
+    */
 }
 
-
-main {
+main{
     margin: 0 auto;
     max-width: 800px;
 }
@@ -26,6 +25,37 @@ section{
     animation-range: entry 10% cover 40%;
 }
 
+a{
+    display: block;
+    margin: 0 auto;
+    background-color: #5572B2;
+    color: #f7f7f7;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 35px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+h2{
+    font-size: 60px;
+    margin: 25px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
 
 @keyframes reveal {
     from {
@@ -40,8 +70,8 @@ section{
 
 audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel {
-     background-color: #e9d9c6;
-     color: #588038;
+     background-color: #82a1d1;
+     color: white;
      }
 
 /*-----------------------    Primera Seccion    -----------------------*/
@@ -51,26 +81,44 @@ audio::-webkit-media-controls-play-button,
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .section-1 article{
-    width: 88%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    width: 70%;
     z-index: 50;
     text-align: center;
+    margin-top: 70px;
 }
 
-.section-1 article span{
-    display: block;
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.insignia {
-    width: 280px;
-    border-radius: 50%;
+.contenedor-guardar-fecha hr{
+    width: 40%;
+    padding: 0 20px;
+    border:  #344c92 2.8px solid;
+    color: #344c92;
+}
+
+.contenedor-fecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor-fecha hr{
+    padding: 0 40px;
+    border:  #344c92 1px solid;
+    color: #344c92;
+}
+
+.contenedor-fecha span{
+    font-size: 30px;
 }
 
 .flores{
@@ -81,30 +129,35 @@ audio::-webkit-media-controls-play-button,
     z-index: 1;
 }
 
-.datos{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:18px;
+
+
+.guardar-fecha{
+    font-size: 70px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #82a1d1;
 }
 
-h1{
-    font-family: "Tangerine", serif;
-    font-size: 60px;
-    margin: 0;
-    margin-top: 25px;
-    color: #588038;
+.nos-casamos{
+    font-size: 30px;
+    margin: 20px;
 }
 
-.nuestra{
-    font-family: "Tangerine", serif;
-    font-size: 55px;
+.gotas{
+    width: 230px;
+    position: absolute;
 }
 
-.fecha, .ciudad{
-    font-size: 25px;
+#gotas1{
+    top: 300px;
+    right: -80px;
+    transform: rotate(-90deg);
+}
+
+#gotas2{
+    top: 600px;
+    left: -80px;
+    transform: rotate(90deg);
 }
 
 #countdown {
@@ -122,311 +175,116 @@ h1{
 }
 
 /*-----------------------    Segunda Seccion    -----------------------*/
+
+
 .section-2 {
-    height: 80vh;
-    background: url('img/fotos/DSC_3720.webp') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #344c92;
+    color: white;
+    padding: 40px 0;
 }
 
+.section-2 div{
+    width: 100%;
+}
+
+.section-2 ul{
+    margin: 0 auto;
+    width: 95%;
+    padding: 10px 0;
+}
+
+.section-2 li{
+    width: 13%;
+    padding: 8px 0;
+}
+
+.semana{
+    font-size: 25px;
+}
+
+.dias{
+    font-size: 20px;
+    width: 70%;
+}
+
+.dia19{
+    background-color: #292828;
+}
+
+.section-2 a{
+    margin-top: 50px;
+}
 /*-----------------------    Tercera Seccion    -----------------------*/
-.section-3 {    
+.section-3, .section-5{    
     width: 100%;
     text-align: center;
-    background-color: #545454;
-    color: #e9d9c6;
+    color: #344c92;
+   /* #82a1d1;
+    #344c92;
+    #5572B2;*/
     padding: 50px 0px;
     font-size: 25px;
+}
+
+.section-3 article, .section-5 article{
+    border: #344c92 1px solid;
+    width: 90%;
+    margin: 30px auto;
+    padding: 50px 0px;
+}
+
+.section-3 article div, .section-5 article div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #344c92;
+    border-radius: 20px;
+    color: #f7f7f7;
+    gap: 40px;
+}
+
+.section-3 article div span{
+    border-top: 1px #f7f7f7 solid;
+    border-bottom: 1px #f7f7f7 solid;
+    padding: 40px 0;
+}
+
+.datos-ceremonia{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
 }
 
 .section-3 p{
     margin: auto 15px;
 }
 
+.section-3 a{
+    margin-top: 40px;
+}
 /*-----------------------    Cuarta Seccion    -----------------------*/
 
 .section-4{
     width: 100%;
-    position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 100px;
-    font-family: "Tangerine", serif;
+    padding: 50px 0;
+    background-color: #344c92;
+    color: #f7f7f7;
+    text-align: center;
 }
 
 .section-4 article{
-    width: 80%;
-    margin-top: 50px;
-    z-index: 50;
-    text-align: center;
-    padding: 40px 15px;
-    backdrop-filter: blur(5px);
-    border: 1px solid #588038;
-    border-radius: 10px; 
-}
-
-.section-4 h2{
-    font-size: 55px;
-    margin: 0;
-    margin-top: 25px;
-    color: #588038;
-}
-
-.section-4 h4{
-    font-size: 35px;
-    margin: 0;
-    margin-top: 25px;
-    color: #588038;
-}
-
-.section-4 p{
-    font-size: 32px;
-    margin: 0;
-    margin-top: 25px;
-    
-}
-
-.cross-svg{
-    width: 14px;
-    margin-left: 6px;
-}
-
-/*-----------------------    Quinta Seccion    -----------------------*/
-.slider {
-    height: 80vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: #545454;
-}
-
-.slides {
-    height: 100%;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    margin-top: 40px;
 }
 
-.slides img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.slider-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.slider-buttons button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-}
-
-/*-----------------------    Sexta Seccion    -----------------------*/
-.section-6{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.datos-contenedor{
-    width: 80%;
-    margin: 0 auto;
-    z-index: 50;
-    padding: 10px 15px;
-    backdrop-filter: blur(5px);
-    border: 1px solid #588038;
-    border-radius: 10px; 
-}
-
-.datos-contenedor article{
-    padding: 50px;
-}
-
-.svg-container {
-    display:   flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #588038;
-    width: 110px;
-    height: 110px;
-    margin: 0 auto;
-    border-radius: 100%;
-}
-
-.svg{
-    width: 70px;
-    height: 70px;
-}
-
-.datos-contenedor h4{
-    font-family: "Tangerine", serif;
-    font-size: 45px;
-    margin: 6px;
-    color: #588038;
-}
-
-.hora{
-    font-size: 25px;
-    margin: 1px;
-}
-
-.direccion{
-    font-size: 18px;
-}
-
-/*-----------------------    Septima Seccion    -----------------------*/
-.section-7{
-    background-color: #545454;
-    color: #e9d9c6;
-    padding: 50px 0;
-}
-
-.section-7 p{
-    padding: 18px 0;
-    text-align: center;
-    font-size: 25px;
-}
-
-.itinerario{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-}
-
-.contenedor-evento{
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 40px;
-    text-align: start;
-}
-
-.evento span{
-    display: block;
-}
-
-.container-img-green{
-    padding: 10px;
-    background-color: #e9d9c6;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-green{
-    width: 30px;
-}
-
-/*-----------------------    Octava Seccion    -----------------------*/
-.section-8{
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.section-8 article{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    z-index: 50;
-    text-align: center;
-    backdrop-filter: blur(5px);
-    border: 1px solid #588038;
-    padding: 40px 10px;
-    border-radius: 10px;
-}
-
-.section-8 .container-gift div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-8 h2{
-    font-family: "Tangerine", serif;
-}
-
-.section-8 p{
-    font-size: 20px;
-}
-
-.gift{
-    width: 70px;
-}
-
-.gift-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 110px;
-    height: 110px;
-    border: 1px solid #588038;
-    border-radius: 100%;
-}
-
-.container-gift h2{
-    font-size: 45px;
-    margin: 0;
-    margin-top: 25px;
-    color: #588038;
-}
-
- a{
-    background-color: #545454;
-    color: #e9d9c6;
-    padding: 10px 50px;
-    margin-top: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.section-8 span{
-    margin-top: 5px;
-    font-size: 15px;
-}
-
-/*-----------------------    Novena Seccion    -----------------------*/
-.section-9{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    background-color: #545454;
-    color: #e9d9c6;
-    text-align: center;
-}
-
-.section-9 article{
-    display: flex;
-}
-
-.section-9 article div{
+.section-4 article div{
     width: 50%;
 }
 
@@ -438,74 +296,76 @@ h1{
     border-radius: 100%;
 }
 
-.section-9 h2{
-    font-size: 40px;
-    margin: 15px;
-    font-family: "Tangerine", serif;
+.section-4 span{
+    font-size: 30px;
 }
 
-.section-9 p{
+.section-4 p{
     margin: auto 10px;
 }
 
-/*-----------------------    Decima Seccion    -----------------------*/
-.section-10{
+.contenedor-colores{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contenedor-colores ul{
+    margin: 20px;
+    padding: 0;
+}
+
+.contenedor-colores ul li{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+#blanco{
+    background-color: #ffffff;
+}
+
+#beige{
+    background-color: #F5F5DC;
+}
+
+#amarillo{
+    background-color: #FFFF00;
+}
+
+#plateado{
+    background-color: #C0C0C0;
+}
+
+#dorado{
+    background-color: #FFD700;
+}
+
+#rojo{
+    background-color: #FF0000;
+}
+
+/*-----------------------    Quinta Seccion    -----------------------*/
+.section-5 article div{
+ padding: 20px 0px;
+}
+
+.section-5 p{
+    width: 90%;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+/*-----------------------    Sexta Seccion    -----------------------*/
+.section-6{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e9d9c6;
-    padding: 80px 0;
     text-align: center;
-
-    z-index: -1;
-}
-
-.section-10 img{
-    position: absolute;
-    width: 100px;
-    z-index: 1;
-}
-
-.section-10 h2{
-    font-size: 40px;
-    margin-bottom: 35px;
-    font-family: "Tangerine", serif;
-}
-
-.flores-abajo{
-    bottom: 0;
-    right: 0;
-}
-
-.flores-abajo1{
-    bottom: 0;
-    left: 100px;
-}
-
-.flores-abajo4{
-    bottom: 0;
-    left: 0;
-}
-
-.flores-abajo2{
-    bottom: 0;
-    right: 100px;
-}
-
-.flores-abajo3{
-    bottom: 0;
-    left: auto;
-}
-
-.section-10 article{
-    width: 80%;
-    backdrop-filter: blur(10px);
-    z-index: 10;
-    margin: 0 auto;
-    padding: 30px 0;
-    border: 1px solid #588038;
-    border-radius: 10px;
+    background-color: #344c92;
+    color: #f7f7f7;
+    padding-bottom: 30px;
 }
 
 form{
@@ -524,36 +384,30 @@ input{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #58803833;
-    color: #292828;
-    font-family: "Playfair Display", serif;
+    background-color: #f7f7f7;
+    color: #344c92;
+    font-size: 20px;
 }
 
 button{
     border: none;
-    background-color: #545454;
-    color: #e9d9c6;
+    background-color: #f7f7f7;
+    color: #344c92;
     padding: 10px 18px;
     border-radius: 6px;
     font-size: 20px;
 }
 
 
+/*-----------------------    Septima Seccion    -----------------------*/
 
-/*-----------------------    Onceava Seccion    -----------------------*/
-.section-11 {    
-    width: 100%;
-    text-align: center;
-    background-color: #545454;
-    color: #e9d9c6;
-    padding: 30px 0px;   
-}
 
-.section-11 h2{
-    font-family: "Tangerine", serif;
-    font-size: 40px;
-}
+/*-----------------------    Octava Seccion    -----------------------*/
 
-.section-11 p{
-    margin: auto 5px;
-}
+
+
+
+
+
+
+
