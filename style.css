@@ -30,9 +30,10 @@ a{
     margin: 0 auto;
     background-color: #5572B2;
     color: #f7f7f7;
-    padding: 10px 50px;
+    padding: 15px 50px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 22px;
+    border-radius: 8px;
 }
 
 h1{
@@ -144,7 +145,7 @@ audio::-webkit-media-controls-play-button,
 }
 
 .gotas{
-    width: 230px;
+    width: 250px;
     position: absolute;
 }
 
@@ -212,7 +213,7 @@ audio::-webkit-media-controls-play-button,
 }
 
 .dia19{
-    background-color: #292828;
+    background-color: #5572B2;
 }
 
 .section-2 a{
@@ -246,6 +247,16 @@ audio::-webkit-media-controls-play-button,
     gap: 40px;
 }
 
+.pareja{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.copas{
+    width: 300px;
+    margin: 0 auto;
+}
+
 .section-3 article div span{
     border-top: 1px #f7f7f7 solid;
     border-bottom: 1px #f7f7f7 solid;
@@ -258,9 +269,6 @@ audio::-webkit-media-controls-play-button,
     padding: 40px 0;
 }
 
-.section-3 p{
-    margin: auto 15px;
-}
 
 .section-3 a{
     margin-top: 40px;
@@ -291,7 +299,7 @@ audio::-webkit-media-controls-play-button,
 .tie-svg{
     width: 80px;
     margin: 20px;
-    border: #e9d9c6 1px solid;
+    border: #f7f7f7 1px solid;
     padding: 10px;
     border-radius: 100%;
 }
@@ -320,6 +328,10 @@ audio::-webkit-media-controls-play-button,
     border-radius: 100%;
 }
 
+.contenedor-colores p{
+    font-size: 25px;
+}
+
 #blanco{
     background-color: #ffffff;
 }
@@ -346,13 +358,33 @@ audio::-webkit-media-controls-play-button,
 
 /*-----------------------    Quinta Seccion    -----------------------*/
 .section-5 article div{
- padding: 20px 0px;
+ padding: 60px 0px;
+}
+
+.section-5 span{
+    display: block;
+    font-size: 42px;
+}
+
+.section-5 img{
+    width: 200px;
+    margin-top: 30px;
 }
 
 .section-5 p{
-    width: 90%;
-    font-size: 15px;
+    font-size: 22px;
+    width: 250px;
     margin: 15px auto;
+}
+
+.section-5 button{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.modal{
+    visibility: hidden;
+    display: none;
 }
 
 /*-----------------------    Sexta Seccion    -----------------------*/
