@@ -150,8 +150,8 @@ audio::-webkit-media-controls-play-button,
 }
 
 #gotas1{
-    top: 300px;
-    right: -80px;
+    top: 200px;
+    right: -50px;
     transform: rotate(-90deg);
 }
 
@@ -186,6 +186,7 @@ audio::-webkit-media-controls-play-button,
     background-color: #344c92;
     color: white;
     padding: 40px 0;
+    border-radius: 10px;
 }
 
 .section-2 div{
@@ -233,6 +234,7 @@ audio::-webkit-media-controls-play-button,
 
 .section-3 article, .section-5 article{
     border: #344c92 1px solid;
+    border-radius: 10px;
     width: 90%;
     margin: 30px auto;
     padding: 50px 0px;
@@ -285,6 +287,7 @@ audio::-webkit-media-controls-play-button,
     background-color: #344c92;
     color: #f7f7f7;
     text-align: center;
+    border-radius: 10px;
 }
 
 .section-4 article{
@@ -382,9 +385,51 @@ audio::-webkit-media-controls-play-button,
     font-size: 24px;
 }
 
-.modal{
-    visibility: hidden;
+.ocultar-modal{
     display: none;
+}
+
+.modal{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color:#344c925d;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor-modal{
+    background-color: #f7f7f7;
+    color: #344c92;
+    width: 88%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contenedor-modal ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    padding: 0;
+}
+
+.contenedor-modal li{
+    text-align: left;
+}
+
+.modal button{
+    display: block;
+    background-color: #344c92;
+    color: #f7f7f7;
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 /*-----------------------    Sexta Seccion    -----------------------*/
@@ -432,7 +477,35 @@ button{
 
 
 /*-----------------------    Septima Seccion    -----------------------*/
+.section-7{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 20px;
+}
 
+.countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #344c92;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.countdown p{
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    color: #344c92;
+    font-size: 30px;
+    margin: 0;
+    background-color: violet;
+    width: 95%;
+}
 
 /*-----------------------    Octava Seccion    -----------------------*/
 

@@ -61,7 +61,7 @@
                     <li>22</li>
                 </ul>
             </div>
-            <a href="">Guardar en el calendario</a>
+            <a href="https://calendar.app.google/psQSM3wc1JwdFpSY6" target="_blank" rel="noopener noreferrer"></a>
         </section>
 
          <!-- Seccion 3 | Lugar y horario del evento -->
@@ -98,11 +98,11 @@
             <article>
                 <div>
                     <img src="img/dress.png" alt="" class="tie-svg">
-                    <p>Mujeres: Vestido formal (blanco, rojo y rosa reservado).</p>
+                    <p>Mujeres: Vestido formal.</p>
                 </div>
                 <div>
                     <img src="img/tie.svg" alt="" class="tie-svg">
-                    <p>Hombres: Pantalón de vestir, camisa/sueter. 
+                    <p>Hombres: Pantalón de vestir, camisa. 
                     </p>
                 </div>
             </article>
@@ -117,7 +117,7 @@
                     <span>Tips y Notas</span>
                     <img src="img/file-check.svg" alt="">
                     <p>Información adicional para tener en cuenta.</p>
-                    <button>+ Info</button>
+                    <button type="submit" id="abrir-modal1" onclick="abrirModal(1)">+ Info</button>
                 </div>
             </article>
             <article>
@@ -125,32 +125,34 @@
                     <span>Obsequios</span>
                     <img src="img/gift.svg" alt="">
                     <p>Si está a su disposición brindar una muestra de cariño, estaremos muy agradecidos.</p>
-                    <button>+ Info</button>
+                    <button type="submit" id="abrir-modal2" onclick="abrirModal(2)">+ Info</button>
                 </div>
             </article>
         </section>
 
-        <article id="modal1" class="modal">
-            <p>
-                * favor de ser puntual 
-* ⁠confirma asistencia a la brevedad, antes del 10 de julio 
-* ⁠lleva abrigo, ya que es un jardín 
-* ⁠favor de respetar el número de pases
-* ⁠para las personas que lleven bebés/niños, favor de estar al pendiente de ellos y no dejarlos solos, para evitar accidentes
-            </p>
+        <article id="modal1" class="ocultar-modal">
+            <div class="contenedor-modal">
+                <ul>
+                    <li>* Favor de ser puntual.</li>
+                    <li>* ⁠Confirma asistencia a la brevedad, antes del 10 de julio.</li>
+                    <li>* ⁠Lleva abrigo, ya que es un jardín.</li>
+                    <li>* ⁠Favor de respetar el número de pases.</li>
+                    <li> * ⁠Para las personas que lleven bebés/niños, favor de estar al pendiente de ellos y no dejarlos solos, para evitar accidentes.</li>
+                </ul>
+                <button type="submit" onclick="cerrarModal(1)">Cerrar</button>
+            </div>
         </article>
 
-        <article id="modal2" class="modal">
-            <p>
-                Para quienes desees hacer un regalo en efectivo, contaremos con sobres disponibles en recepción para poderlos depositar en el cofre. También pueden contribuir mediante depósito/transferencia: 
-
-
-* BBVA: 4152313720875231
-
-* Banco Azteca: 4027 6658 7822 1440
-
-* Banamex: 52567842 9804 1798
-            </p>
+        <article id="modal2" class="ocultar-modal">
+            <div class="contenedor-modal">
+                <p>Para quienes desees hacer un regalo en efectivo, contaremos con sobres disponibles en recepción para poderlos depositar en el cofre. También pueden contribuir mediante depósito/transferencia: </p>
+                <ul>
+                    <li>* BBVA: 4152313720875231</li>
+                    <li>* Banco Azteca: 4027 6658 7822 1440</li>
+                    <li>* Banamex: 52567842 9804 1798</li>
+                </ul> 
+                <button type="submit" onclick="cerrarModal(2)">Cerrar</button>
+            </div>
         </article>
 
         <!-- Seccion 6 | Confirmar asistencia -->
